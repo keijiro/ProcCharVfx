@@ -1,6 +1,6 @@
 #include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl"
 
-void ProcChar_float(float2 uv, float seed, out float output)
+void Generator_float(float2 uv, float seed, out float output)
 {
     uint2 pos = uv * 8;
     pos.x = min(pos.x, 7 - pos.x) ;

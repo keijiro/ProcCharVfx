@@ -21,7 +21,7 @@ MonoBehaviour:
     x: 345
     y: -133
     width: 992
-    height: 1524
+    height: 1525
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -32,7 +32,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d4c867f6b72b714dbb5fd1780afe208, type: 3}
-  m_Name: Test
+  m_Name: Invaders
   m_EditorClassIdentifier: 
   m_Parent: {fileID: 0}
   m_Children:
@@ -59,7 +59,7 @@ VisualEffectResource:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Test
+  m_Name: Invaders
   m_Graph: {fileID: 114350483966674976}
   m_ShaderSources:
   - compute: 1
@@ -232,7 +232,7 @@ VisualEffectResource:
       = index;\n#endif\n#endif\n\t}\n}\n"
   - compute: 0
     name: '[System 1]Output Particle Quad'
-    source: "Shader \"Hidden/VFX/Test/System 1/Output Particle Quad\"\n{\n\tSubShader\n\t{\t\n\t\tCull
+    source: "Shader \"Hidden/VFX/Invaders/System 1/Output Particle Quad\"\n{\n\tSubShader\n\t{\t\n\t\tCull
       Off\n\t\t\n\t\tTags { \"Queue\"=\"Transparent+0\" \"IgnoreProjector\"=\"True\"
       \"RenderType\"=\"Transparent\" }\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\tBlend
       SrcAlpha OneMinusSrcAlpha \n\t\tZTest LEqual\n\t\tZWrite Off\n\t\tCull Off\n\t\t\n\t\n\t\t\t\n\t\tHLSLINCLUDE\n\t\t\n\t\t#define
@@ -472,8 +472,8 @@ VisualEffectResource:
       SHADERPASS\n\t\t\t\t\t#error Shaderpass should be defined at this stage.\n\t\t\t\t\t#endif\n\t\t\t\t\t#include
       \"Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderGraphFunctions.hlsl\"\n\t\t\t\t\t\n\t\t\t\n\t\t\t#include
       \"Packages/com.unity.shadergraph/ShaderGraphLibrary/Functions.hlsl\"\n\t\t\t//
-      Node: Custom Function\n\t\t\t// 1e59dbb8462da93d96703f68b3b7eeea\n\t\t\t#include
-      \"Assets/ProcChar.hlsl\"\n\t\t\t\n\t\t\tstruct SG_Input_966d8108b5be9b541bd90e96e89db13b\n\t\t\t{\n\t\t\t   
+      Node: Custom Function\n\t\t\t// 1f1ed2ad9757a3db74c4f0a057a13b87\n\t\t\t#include
+      \"Assets/Invaders.hlsl\"\n\t\t\t\n\t\t\tstruct SG_Input_966d8108b5be9b541bd90e96e89db13b\n\t\t\t{\n\t\t\t   
       half4 uv0;\n\t\t\t};\n\t\t\t\n\t\t\tstruct SG_Output_966d8108b5be9b541bd90e96e89db13b\n\t\t\t{\n\t\t\t   
       float Alpha_4;\n\t\t\t};\n\t\t\t\n\t\t\tSG_Output_966d8108b5be9b541bd90e96e89db13b
       SG_Evaluate_966d8108b5be9b541bd90e96e89db13b(\n\t\t\t    SG_Input_966d8108b5be9b541bd90e96e89db13b
@@ -481,7 +481,7 @@ VisualEffectResource:
       UV\n\t\t\t    float4 _UV_A76694C8_Out_0 = IN.uv0;\n\t\t\t\n\t\t\t    // Node:
       Property\n\t\t\t    float _Property_2E04F9AE_Out_0 = Seed;\n\t\t\t\n\t\t\t   
       // Node: Custom Function\n\t\t\t    float _CustomFunction_4C7807DD_output_1;\n\t\t\t   
-      ProcChar_float((_UV_A76694C8_Out_0.xy), _Property_2E04F9AE_Out_0, _CustomFunction_4C7807DD_output_1);\n\t\t\t\n\t\t\t   
+      Generator_float((_UV_A76694C8_Out_0.xy), _Property_2E04F9AE_Out_0, _CustomFunction_4C7807DD_output_1);\n\t\t\t\n\t\t\t   
       // Visual Effect Master\n\t\t\t    SG_Output_966d8108b5be9b541bd90e96e89db13b
       OUT;\n\t\t\t    OUT.Alpha_4 = _CustomFunction_4C7807DD_output_1;\n\t\t\t   
       return OUT;\n\t\t\t}\n\t\t\t\n\n\t\t\t\n\t\t\t#pragma fragment frag\n\t\t\tfloat4
@@ -707,8 +707,8 @@ VisualEffectResource:
       SHADERPASS\n\t\t\t\t\t#error Shaderpass should be defined at this stage.\n\t\t\t\t\t#endif\n\t\t\t\t\t#include
       \"Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderGraphFunctions.hlsl\"\n\t\t\t\t\t\n\t\t\t\n\t\t\t#include
       \"Packages/com.unity.shadergraph/ShaderGraphLibrary/Functions.hlsl\"\n\t\t\t//
-      Node: Custom Function\n\t\t\t// 1e59dbb8462da93d96703f68b3b7eeea\n\t\t\t#include
-      \"Assets/ProcChar.hlsl\"\n\t\t\t\n\t\t\tstruct SG_Input_966d8108b5be9b541bd90e96e89db13b\n\t\t\t{\n\t\t\t   
+      Node: Custom Function\n\t\t\t// 1f1ed2ad9757a3db74c4f0a057a13b87\n\t\t\t#include
+      \"Assets/Invaders.hlsl\"\n\t\t\t\n\t\t\tstruct SG_Input_966d8108b5be9b541bd90e96e89db13b\n\t\t\t{\n\t\t\t   
       half4 uv0;\n\t\t\t};\n\t\t\t\n\t\t\tstruct SG_Output_966d8108b5be9b541bd90e96e89db13b\n\t\t\t{\n\t\t\t   
       float3 Color_6;\n\t\t\t    float Alpha_4;\n\t\t\t};\n\t\t\t\n\t\t\tSG_Output_966d8108b5be9b541bd90e96e89db13b
       SG_Evaluate_966d8108b5be9b541bd90e96e89db13b(\n\t\t\t    SG_Input_966d8108b5be9b541bd90e96e89db13b
@@ -717,7 +717,7 @@ VisualEffectResource:
       _Property_E74C03BF_Out_0 = BaseColor;\n\t\t\t\n\t\t\t    // Node: UV\n\t\t\t   
       float4 _UV_A76694C8_Out_0 = IN.uv0;\n\t\t\t\n\t\t\t    // Node: Property\n\t\t\t   
       float _Property_2E04F9AE_Out_0 = Seed;\n\t\t\t\n\t\t\t    // Node: Custom Function\n\t\t\t   
-      float _CustomFunction_4C7807DD_output_1;\n\t\t\t    ProcChar_float((_UV_A76694C8_Out_0.xy),
+      float _CustomFunction_4C7807DD_output_1;\n\t\t\t    Generator_float((_UV_A76694C8_Out_0.xy),
       _Property_2E04F9AE_Out_0, _CustomFunction_4C7807DD_output_1);\n\t\t\t\n\t\t\t   
       // Visual Effect Master\n\t\t\t    SG_Output_966d8108b5be9b541bd90e96e89db13b
       OUT;\n\t\t\t    OUT.Color_6 = (_Property_E74C03BF_Out_0.xyz);\n\t\t\t    OUT.Alpha_4
