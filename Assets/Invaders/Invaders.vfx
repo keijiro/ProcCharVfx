@@ -473,7 +473,7 @@ VisualEffectResource:
       \"Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderGraphFunctions.hlsl\"\n\t\t\t\t\t\n\t\t\t\n\t\t\t#include
       \"Packages/com.unity.shadergraph/ShaderGraphLibrary/Functions.hlsl\"\n\t\t\t//
       Node: Custom Function\n\t\t\t// 1f1ed2ad9757a3db74c4f0a057a13b87\n\t\t\t#include
-      \"Assets/Invaders.hlsl\"\n\t\t\t\n\t\t\tstruct SG_Input_966d8108b5be9b541bd90e96e89db13b\n\t\t\t{\n\t\t\t   
+      \"Assets/Invaders/Invaders.hlsl\"\n\t\t\t\n\t\t\tstruct SG_Input_966d8108b5be9b541bd90e96e89db13b\n\t\t\t{\n\t\t\t   
       half4 uv0;\n\t\t\t};\n\t\t\t\n\t\t\tstruct SG_Output_966d8108b5be9b541bd90e96e89db13b\n\t\t\t{\n\t\t\t   
       float Alpha_4;\n\t\t\t};\n\t\t\t\n\t\t\tSG_Output_966d8108b5be9b541bd90e96e89db13b
       SG_Evaluate_966d8108b5be9b541bd90e96e89db13b(\n\t\t\t    SG_Input_966d8108b5be9b541bd90e96e89db13b
@@ -708,7 +708,7 @@ VisualEffectResource:
       \"Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderGraphFunctions.hlsl\"\n\t\t\t\t\t\n\t\t\t\n\t\t\t#include
       \"Packages/com.unity.shadergraph/ShaderGraphLibrary/Functions.hlsl\"\n\t\t\t//
       Node: Custom Function\n\t\t\t// 1f1ed2ad9757a3db74c4f0a057a13b87\n\t\t\t#include
-      \"Assets/Invaders.hlsl\"\n\t\t\t\n\t\t\tstruct SG_Input_966d8108b5be9b541bd90e96e89db13b\n\t\t\t{\n\t\t\t   
+      \"Assets/Invaders/Invaders.hlsl\"\n\t\t\t\n\t\t\tstruct SG_Input_966d8108b5be9b541bd90e96e89db13b\n\t\t\t{\n\t\t\t   
       half4 uv0;\n\t\t\t};\n\t\t\t\n\t\t\tstruct SG_Output_966d8108b5be9b541bd90e96e89db13b\n\t\t\t{\n\t\t\t   
       float3 Color_6;\n\t\t\t    float Alpha_4;\n\t\t\t};\n\t\t\t\n\t\t\tSG_Output_966d8108b5be9b541bd90e96e89db13b
       SG_Evaluate_966d8108b5be9b541bd90e96e89db13b(\n\t\t\t    SG_Input_966d8108b5be9b541bd90e96e89db13b

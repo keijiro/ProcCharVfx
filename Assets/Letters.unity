@@ -248,7 +248,7 @@ MonoBehaviour:
       enableBigTilePrepass: 0
       isFptlEnabled: 0
   clearColorMode: 1
-  backgroundColorHDR: {r: 0, g: 0.07665804, b: 0.09433961, a: 0}
+  backgroundColorHDR: {r: 0.024385883, g: 0.03188823, b: 0.03773582, a: 0}
   clearDepth: 1
   volumeLayerMask:
     serializedVersion: 2
@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 1341478413}
   - component: {fileID: 1341478412}
   m_Layer: 0
-  m_Name: Invaders
+  m_Name: Letters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -422,7 +422,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341478411}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: 68d4da29beac8ef4dbc8ecb37e418dc6, type: 3}
+  m_Asset: {fileID: 8926484042661614526, guid: cb566addd9d6573449c69818eef8dc87, type: 3}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
   m_StartSeed: 0
