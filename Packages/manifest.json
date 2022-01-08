@@ -1,8 +1,6 @@
 {
   "dependencies": {
-    "com.unity.render-pipelines.high-definition": "7.5.1",
-    "com.unity.timeline": "1.4.3",
-    "com.unity.modules.imageconversion": "1.0.0",
-    "com.unity.modules.xr": "1.0.0"
+    "com.unity.render-pipelines.universal": "12.1.2",
+    "com.unity.visualeffectgraph": "12.1.2"
   }
 }
